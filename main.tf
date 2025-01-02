@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "google" {
-  project = "voltes-446205"
+  project = "project ID"
   region  = "us-central1"
 }
 
