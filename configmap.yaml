@@ -1,0 +1,105 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: voltes-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voltes V Wallpapers</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Voltes V Wallpapers</h1>
+            <nav>
+                <ul>
+                    <li><a href="#wallpapers">Wallpapers</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="wallpapers">
+                <h2>Download Wallpapers</h2>
+                <div class="gallery">
+                    <a href="https://storage.googleapis.com/voltes-image-bucket/wp1948302-voltes-v-wallpapers.jpg" download>
+                        <img src="https://storage.googleapis.com/voltes-image-bucket/wp1948302-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 1">
+                    </a>
+                    <a href="https://storage.googleapis.com/voltes-image-bucket/wp1948303-voltes-v-wallpapers.jpg" download>
+                        <img src="https://storage.googleapis.com/voltes-image-bucket/wp1948303-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 2">
+                    </a>
+                    <a href="https://storage.googleapis.com/voltes-image-bucket/wp1948308-voltes-v-wallpapers.jpg" download>
+                        <img src="https://storage.googleapis.com/voltes-image-bucket/wp1948308-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 3">
+                    </a>
+                    <a href="https://storage.googleapis.com/voltes-image-bucket/wp1948316-voltes-v-wallpapers.jpg" download>
+                        <img src="https://storage.googleapis.com/voltes-image-bucket/wp1948316-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 4">
+                    </a>
+                    <a href="https://storage.googleapis.com/voltes-image-bucket/wp1948317-voltes-v-wallpapers.jpg" download>
+                        <img src="https://storage.googleapis.com/voltes-image-bucket/wp1948317-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 5">
+                    </a>
+                    <a href="https://storage.googleapis.com/voltes-image-bucket/wp1948320-voltes-v-wallpapers.jpg" download>
+                        <img src="https://storage.googleapis.com/voltes-image-bucket/wp1948320-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 6">
+                    </a>
+                    <a href="https://storage.googleapis.com/voltes-image-bucket/wp1948325-voltes-v-wallpapers.jpg" download>
+                        <img src="https://storage.googleapis.com/voltes-image-bucket/wp1948325-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 7">
+                    </a>
+                    <a href="https://storage.googleapis.com/voltes-image-bucket/wp1948346-voltes-v-wallpapers.jpg" download>
+                        <img src="https://storage.googleapis.com/voltes-image-bucket/wp1948346-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 8">
+                    </a>
+                    <a href="https://storage.googleapis.com/voltes-image-bucket/wp1948361-voltes-v-wallpapers.jpg" download>
+                        <img src="https://storage.googleapis.com/voltes-image-bucket/wp1948361-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 9">
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Voltes V Fan Page</p>
+        </footer>
+    </body>
+    </html>
+
+  styles.css: |
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+    }
+    header {
+        background-color: #222;
+        padding: 10px 20px;
+    }
+    h1 {
+        margin: 0;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    nav li {
+        display: inline;
+        margin-right: 15px;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery a {
+        margin: 10px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .gallery img {
+        max-width: 200px;
+        height: auto;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #222;
+    }

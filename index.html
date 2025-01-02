@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltes V Wallpapers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Voltes V Wallpapers</h1>
+        <nav>
+            <ul>
+                <li><a href="#wallpapers">Wallpapers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="wallpapers">
+            <h2>Download Wallpapers</h2>
+            <div class="gallery">
+                <a href="wallpapers/wp1948302-voltes-v-wallpapers.jpg" download onclick="showPreview('wallpapers/wp1948302-voltes-v-wallpapers.jpg')">
+                    <img src="wallpapers/wp1948302-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 1">
+                </a>
+                <a href="wallpapers/wp1948303-voltes-v-wallpapers.jpg" download onclick="showPreview('wallpapers/wp1948303-voltes-v-wallpapers.jpg')">
+                    <img src="wallpapers/wp1948303-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 2">
+                </a>
+                <a href="wallpapers/wp1948308-voltes-v-wallpapers.jpg" download onclick="showPreview('wallpapers/wp1948308-voltes-v-wallpapers.jpg')">
+                    <img src="wallpapers/wp1948308-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 3">
+                </a>
+                <a href="wallpapers/wp1948316-voltes-v-wallpapers.jpg" download onclick="showPreview('wallpapers/wp1948316-voltes-v-wallpapers.jpg')">
+                    <img src="wallpapers/wp1948316-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 4">
+                </a>
+                <a href="wallpapers/wp1948320-voltes-v-wallpapers.jpg" download onclick="showPreview('wallpapers/wp1948320-voltes-v-wallpapers.jpg')">
+                    <img src="wallpapers/wp1948320-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 5">
+                </a>
+                <a href="wallpapers/wp1948346-voltes-v-wallpapers.jpg" download onclick="showPreview('wallpapers/wp1948346-voltes-v-wallpapers.jpg')">
+                    <img src="wallpapers/wp1948346-voltes-v-wallpapers.jpg" alt="Voltes V Wallpaper 6">
+                </a>
+            </div>
+            <div id="preview" class="preview">
+                <span onclick="closePreview()" class="close">&times;</span>
+                <img id="previewImage" src="" alt="Preview">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Voltes V Fan Page</p>
+    </footer>
+    <script>
+        function showPreview(imageSrc) {
+            const preview = document.getElementById('preview');
+            const previewImage = document.getElementById('previewImage');
+            previewImage.src = imageSrc;
+            preview.style.display = 'block';
+        }
+
+        function closePreview() {
+            const preview = document.getElementById('preview');
+            preview.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
